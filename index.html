@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Make Safe For Work &#183; MSFW &#183; mcdlr</title>
+<meta name="description" content="MSFW (Make Safe For Work) is a way to show images to your coworkers decreasing the possibility of someone else peeking over their shoulders by lowering the time of exposure of the image to the minimum necessary.">
+<meta name="author" content="DrummerHead">
+
+<link rel="stylesheet" href="msfw.css?7">
+<link rel="stylesheet" href="../css/promiscuous.css?7">
+<link rel='image_src' href='http://mcdlr.com/img/thumbs/msfw.jpg'>
+
+<script src="jquery-1.6.min.js"></script>
+<script src="msfw.js"></script>
+<script src="../js/libertine.js"></script>
+</head>
+
+
+<body>
+<header id="brand" class="small">
+  <a href="/" title="Go to mcdlr homepage">Go to mcdlr homepage</a>
+</header>
+<section id="auxilium">
+  <a href="#" class="close" title="Close Help">X</a>
+  <article>
+    <h1>Make Safe For Work</h1>
+    <p>Have you ever wanted to share a NSFW image with a coworker, but in a more stealthy way? Then this is the tool for you. Just paste the URL of whatever NSWF image you've found below, press 'Make it Safe' and you'll get a safe URL you can use to share the image.</p>
+    <p>Afterwards, you (or the recipient of the link) can see a glimpse of the image while pressing the 'show' button. If you don't want to be holding the button to see the image, click the 'Lock show' checkbox to change the way the button works.</p>
+  </article>
+  <div id="flap">
+    <a href="#">?</a>
+  </div>
+</section>
+<div id="vessel">
+
+<form id="imagePutForm">
+  <input type="text" name="imageUrl" id="imageUrl" class="inputText" placeholder="Insert the image URL you wish to share here" />
+  <input type="submit" value="Make it Safe" id="submit" />
+</form><!-- /imagePutForm -->
+<div id="share">
+  <label for="shareUrl">Share this safe URL with your friends and coworkers (click to select all)</label>
+  <input type="text" name="shareUrl" id="shareUrl" class="inputText" />
+</div><!-- /share -->
+<div id="imageArea">
+  <div id="imageDump">
+    <span>?</span>
+  </div>
+  <div id="interactArea">
+    <a id="msfwDo" href="#">show</a>
+    <div id="lockHouse">
+      <input type="checkbox" id="lock" name="lock">
+      <label for="lock">Lock show</label>
+    </div>
+    <p class='inst'>While pressing the button, the image will be revealed.</p>
+    <p>Be aware, what has been seen can not be unseen.</p>
+  </div>
+</div><!-- /imageArea -->
+
+</div><!-- /vessel -->
+
+<!-- Google analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1030009-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- /Google analytics -->
+
+</body>
+</html>
